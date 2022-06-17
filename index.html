@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css"></link:src>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Twist Chat</title>
   </head>
@@ -20,8 +21,53 @@
     
     <!-- Sidebar Start -->
 
+    <form action="">
+      <div class="container">
+        <div class="card p- mt-3 bg-dark text-light">
+        <div class="p-2 card-body">
+          <div class="message p-2" id="msg">
+            Hello
+          </div>
+
+          <div id="send" class="d-flex p-2 fixed-bottom" style="">
+            <input type="text" placeholder="Say Hi ✌" id="messag" class="form-control">
+            <input type="Submit" value="Send"   class="">
+          
+          </div>
+
+        </div>
+
+    </div>      
+      </div>
+
+    
+    </form>
     <!-- Sidebar Ends -->
 
+
+    <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyDqpZcLy3FTrlBUiNGoP2EMQjw4R9gV99k",
+      authDomain: "trailll-8281a.firebaseapp.com",
+      databaseURL: "https://trailll-8281a-default-rtdb.firebaseio.com",
+      projectId: "trailll-8281a",
+      storageBucket: "trailll-8281a.appspot.com",
+      messagingSenderId: "1031691670615",
+      appId: "1:1031691670615:web:0e0dd3c820b97a4acabf12"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+
+    var db = firebase.database();
+
+  </script>
 
     <!-- Incuding Bootstrap -->
     <script
